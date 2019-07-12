@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profileBackground"
+    android:fillViewport="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/alc_user_img"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_nwisu_chisom" />
+
+        <TextView
+            android:id="@+id/alc_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            app:layout_constraintEnd_toEndOf="@+id/alc_user_img"
+            app:layout_constraintStart_toStartOf="@+id/alc_user_img"
+            app:layout_constraintTop_toBottomOf="@+id/alc_user_img" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="32dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/dividerColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alc_user_name" />
+
+        <TextView
+            android:id="@+id/track"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/track"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/user_track" />
+
+        <TextView
+            android:id="@+id/user_track"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/track"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/country"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintStart_toStartOf="@+id/track"
+            app:layout_constraintTop_toBottomOf="@+id/track" />
+
+        <TextView
+            android:id="@+id/user_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintEnd_toEndOf="@+id/user_track"
+            app:layout_constraintStart_toEndOf="@+id/country"
+            app:layout_constraintTop_toBottomOf="@+id/user_track" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/email"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintStart_toStartOf="@+id/country"
+            app:layout_constraintTop_toBottomOf="@+id/country" />
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintEnd_toEndOf="@+id/user_country"
+            app:layout_constraintStart_toEndOf="@+id/email"
+            app:layout_constraintTop_toBottomOf="@+id/user_country" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/phone"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintStart_toStartOf="@+id/email"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <TextView
+            android:id="@+id/user_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintEnd_toEndOf="@+id/user_email"
+            app:layout_constraintStart_toEndOf="@+id/phone"
+            app:layout_constraintTop_toBottomOf="@+id/user_email" />
+
+        <TextView
+            android:id="@+id/slack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/slack"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/user_slack"
+            app:layout_constraintStart_toStartOf="@+id/phone"
+            app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+        <TextView
+            android:id="@+id/user_slack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="TextView"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/user_phone"
+            app:layout_constraintStart_toEndOf="@+id/slack"
+            app:layout_constraintTop_toBottomOf="@+id/user_phone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
